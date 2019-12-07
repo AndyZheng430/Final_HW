@@ -1,0 +1,165 @@
+{
+    "Users": [ 
+        {
+            "firstName": "Bob",
+            "initial": "BT",
+            "lastName": "theBuilder",
+            "wireframeId": "CanWeFixIt"
+        },
+        {
+            "firstName": "Naruto",
+            "initial": "NU",
+            "lastName": "Uzumaki",
+            "wireframeId": "BorutosFather"
+        },
+        {
+            "firstName": "One",
+            "initial": "OP",
+            "lastName": "Piece",
+            "wireframeId": "CanNeverBeFound"
+        }
+    ],
+    "WireframeList": [
+        {
+            "wireframes": [
+                {                    
+                    "Time": 1574721599016,
+                    "id": 0,
+                    "Name": "First WireFrame",
+                    "List": {
+                        "Container": {
+                            "X": 0,
+                            "Y": 0,
+                            "sizeX": 800,
+                            "sizeY": 800,
+                            "text": "",
+                            "text-color": "",
+                            "font-size": 0,
+                            "background-color": "white",
+                            "border-color": "black",
+                            "border-thickness": 2,
+                            "border-radius": 0
+                        },
+                        "Label": {
+                            "X": 50,
+                            "Y": 50,
+                            "sizeX": 100,
+                            "sizeY": 30,
+                            "text": "Login",
+                            "text-color": "black",
+                            "font-size": 18,
+                            "background-color": "white",
+                            "border-color": "",
+                            "border-thickness": 0,
+                            "border-radius": 0
+                        },
+                        "Textfield": {
+                            "X": 50,
+                            "Y": 100,
+                            "sizeX": 100,
+                            "sizeY": 50,
+                            "text": "",
+                            "text-color": "",
+                            "font-size": 18,
+                            "background-color": "",
+                            "border-color": "black",
+                            "border-thickness": 2,
+                            "border-radius": 0
+                        },
+                        "Button": {
+                            "X": 50,
+                            "Y": 200,
+                            "sizeX": 100,
+                            "sizeY": 50,
+                            "text": "Submit",
+                            "text-color": "black",
+                            "font-size": 18,
+                            "background-color": "gray",
+                            "border-color": "black",
+                            "border-thickness": 2,
+                            "border-radius": 5
+                        } 
+                    }
+                },
+                {
+                    "Time": 1574721588727,
+                    "id": 1,
+                    "Name": "Second WireFrame",
+                    "List": {
+                        "Label": {
+                        "X": 100,
+                        "Y": 100,
+                        "sizeX": 500,
+                        "sizeY": 100,
+                        "text": "WELCOME",
+                        "text-color": "black",
+                        "font-size": 48,
+                        "background-color": "white",
+                        "border-color": "",
+                        "border-thickness": 0,
+                        "border-radius": 0
+                    }}
+                },
+                {
+                    "Time": 1574721581238,
+                    "id": 2,
+                    "Name": "Third WireFrame",
+                    "List": {
+                        "Container": {
+                            "X": 0,
+                            "Y": 0,
+                            "sizeX": 800,
+                            "sizeY": 800,
+                            "text": "",
+                            "text-color": "",
+                            "font-size": 0,
+                            "background-color": "white",
+                            "border-color": "black",
+                            "border-thickness": 2,
+                            "border-radius": 0
+                        },
+                        "Label": {
+                            "X": 250,
+                            "Y": 250,
+                            "sizeX": 100,
+                            "sizeY": 30,
+                            "text": "Login",
+                            "text-color": "black",
+                            "font-size": 18,
+                            "background-color": "white",
+                            "border-color": "",
+                            "border-thickness": 0,
+                            "border-radius": 0
+                        },
+                        "Textfield": {
+                            "X": 250,
+                            "Y": 300,
+                            "sizeX": 100,
+                            "sizeY": 50,
+                            "text": "",
+                            "text-color": "",
+                            "font-size": 18,
+                            "background-color": "",
+                            "border-color": "black",
+                            "border-thickness": 2,
+                            "border-radius": 0
+                        },
+                    }
+                }
+            ]
+        },
+        {
+            "wireframes": [
+                {
+                    "Time": 1574721599016,
+                    "id": 0,
+                    "Name": "Something",
+                    "List": {}
+                }
+            ]
+        },
+        {
+            "wireframes": []
+        }
+    ]
+}
