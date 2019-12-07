@@ -1,6 +1,7 @@
 html {
   min-height: 100%;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -9,11 +10,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /*background: url(/img/mario-bg.png) no-repeat;
-  background-size: 100%;
-  background-position: bottom;
-  background-color: #95e8f3;*/
   min-height: 100%;
+}
+
+body {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  top: 5%;
 }
 
 div.banner {
@@ -45,7 +49,70 @@ input[type=password]:not(.browser-default):focus:not([readonly]) + label{
   color: #ec407a !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/*List Screen*/
+.list_header {
+  display: inline-block;
+}
+#list_trash {
+  display: inline-block;
+}
+.list_screen_header {
+  position: relative;
+}
+.list_name {
+  display: inline-block;
+  padding: 0px 10px;
+  width: 50%;
+}
+.list_owner {
+  display: inline-block;
+  padding: 0px 10px;
+  width: 50%;
+}
+.input-field {
+  display: inline-block;
+}
+/*Item List*/
+#list_item_header {
+  top: 10%;
+  padding: 24px;
+}
+.list_item_task_header, .card-assigned-to {
+  left: 2%;
+  width: 20%;
+  display: inline-block;
+}
+
+.card-title {
+  left: 2%;
+  width: 50%;
+  display: inline-block;
+}
+
+.list_item_due_date_header, .card-due_date {
+  left: 50%;
+  width: 20%;
+  display: inline-block;
+}
+
+.list_item_status_header, .card-completed {
+  left: 70%;
+  width: 20%;
+  display: inline-block;
+}
+.item_button_set {
+  display: inline-block;
+}
+.item_button {
+  display: inline-block;
+}
+
+.moveUpItem, .moveDownItem, .deleteItem, .editItem {
+  display: inline-block;
+}
+
+
+/*ITEM SCREEN*/
+#item_form_container {
+  display: grid;
 }
