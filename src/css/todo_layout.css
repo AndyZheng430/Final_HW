@@ -2,3 +2,20 @@ html {
   min-height: 100%;
 }
 
+/* ELEMENT SCREEN > ELEMENT LIST */
+.left-sidenav {
+  position: fixed;
+  top: 8%;
+  left: 0;
+  overflow: hidden;
+}
+.left-sidenav-control-container {
+  text-align: center;
+}
+.left-sidenav-control-zoomIn, .left-sidenav-control-zoomOut, .left-sidenav-control-save, .left-sidenav-control-close {
+  display: inline;
+  text-align: center;
+}
+Button.button-small {
+  vertical-align: center;
+}

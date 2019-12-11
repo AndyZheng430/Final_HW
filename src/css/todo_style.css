@@ -1,0 +1,27 @@
+.left-sidenav {
+  background-color: gray;
+  padding-top: 5px;
+  height: 100%;
+  width: 15%;
+}
+.left-sidenav-control-container {
+  padding: 10px 0;
+}
+.left-sidenav-control-zoomIn, .left-sidenav-control-zoomOut, .left-sidenav-control-save, .left-sidenav-control-close {
+  width: 25%;
+  height: 100px;
+  padding: 10px 10px;
+}
+Button.button-small {
+  font-size: 10px;
+  padding: 0px 10px;
+}
+.left-sidenav-container-icon, .left-sidenav-label-icon, .left-sidenav-button-icon, .left-sidenav-textfield-icon {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 0px;
+  border: 1.5px solid black;
+  border-radius: 8px;
+  margin: 5px 5px;
+}
