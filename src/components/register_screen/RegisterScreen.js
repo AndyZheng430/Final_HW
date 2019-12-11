@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import { firebaseConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 import { Redirect } from 'react-router-dom';
-import { registerHandler } from '../../store/database/asynchHandler'
+import { registerHandler } from '../../store/database/asynchHandler';
+import { getFirestore } from 'redux-firestore';
 
 class RegisterScreen extends Component {
   state = {
@@ -11,6 +12,7 @@ class RegisterScreen extends Component {
     password: '',
     firstName: '',
     lastName: '',
+    wireframeId: '',
   }
 
   handleChange = (e) => {
@@ -24,6 +26,15 @@ class RegisterScreen extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+
+    // creates a new wireframe list in database and adds the id to user information
+    const firestore = getFirestore();
+    firestore.collection("WireFrameList").add({
+      wireframes: []
+    })
+    .then(function(docRef) {
+      this.setState({"wireframeId":docRef})
+    })
 
     const { props, state } = this;
     const { firebase } = props;
