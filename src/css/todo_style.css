@@ -1,3 +1,29 @@
+
+
+
+/* HOME SCREEN */
+.left-homescreen-container {
+  width: 40%;
+  float: left;
+}
+.right-homescreen-container {
+  float: right;
+  width: 60%;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 100px 150px;
+  text-align: center;
+}
+.right-homescreen-title {
+  font-weight: bold;
+}
+Button.create-wireframe {
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* EDIT SCREEN > EDIT LIST */
 .left-sidenav {
   background-color: gray;
   padding-top: 5px;
@@ -10,11 +36,17 @@
 .left-sidenav-control-zoomIn, .left-sidenav-control-zoomOut, .left-sidenav-control-save, .left-sidenav-control-close {
   width: 25%;
   height: 100px;
-  padding: 10px 10px;
+  padding: 5px 5px;
+}
+Button.glyphicon {
+  font-size: 16px;
+  border-radius: 100px;
+  padding: 0px 10px;
 }
 Button.button-small {
   font-size: 10px;
   padding: 0px 10px;
+  border-radius: 8px;
 }
 .left-sidenav-container-icon, .left-sidenav-label-icon, .left-sidenav-button-icon, .left-sidenav-textfield-icon {
   text-align: center;

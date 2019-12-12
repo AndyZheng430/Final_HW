@@ -12,7 +12,7 @@ class RegisterScreen extends Component {
     password: '',
     firstName: '',
     lastName: '',
-    wireframeId: '',
+    wireframeId: null,
   }
 
   handleChange = (e) => {
@@ -29,12 +29,10 @@ class RegisterScreen extends Component {
 
     // creates a new wireframe list in database and adds the id to user information
     const firestore = getFirestore();
-    firestore.collection("WireFrameList").add({
-      wireframes: []
-    })
-    .then(function(docRef) {
-      this.setState({"wireframeId":docRef})
-    })
+    var current_doc = firestore.collection("WireFrameList").doc();
+    current_doc.set({ wireframe: [] });
+    this.state.wireframeId = current_doc.id;
+    console.log(this.state.wireframeId);
 
     const { props, state } = this;
     const { firebase } = props;

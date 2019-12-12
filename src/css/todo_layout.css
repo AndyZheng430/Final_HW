@@ -2,6 +2,11 @@ html {
   min-height: 100%;
 }
 
+/* HOME SCREEN */
+.left-homescreen-container, .right-homescreen-container{
+  display: inline-block;
+}
+
 /* ELEMENT SCREEN > ELEMENT LIST */
 .left-sidenav {
   position: fixed;

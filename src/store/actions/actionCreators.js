@@ -31,15 +31,15 @@ export function logoutSuccess() {
 };
 
 // THESE CREATORS MAKE ACTIONS FOR ASYNCHRONOUS TODO LIST UPDATES
-export function createTodoList(todoList) {
+export function createWireFrameList(WireFrameList) {
     return {
-        type: 'CREATE_TODO_LIST',
-        todoList
+        type: 'CREATE_WireFrame_LIST',
+        WireFrameList
     }
 }
-export function createTodoListError(error) {
+export function createWireFrameListError(error) {
     return {
-        type: 'CREATE_TODO_LIST_ERROR',
+        type: 'CREATE_WireFrame_LIST_ERROR',
         error
     }
 }

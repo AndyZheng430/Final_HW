@@ -5,18 +5,23 @@ import { NavLink, Redirect } from 'react-router-dom';
 import { firestoreConnect } from 'react-redux-firebase';
 import { getFirestore } from 'redux-firestore';
 import { Button } from 'react-materialize';
+import ElementCard from './ElementCard.js';
 
 class ElementList extends Component {
     
+    createContainer = (e) => {
+        return React.createElement('draggable', {ElementCard})
+    }
+
     render() {
         return (
             <div className="left-sidenav">
                 <div className="left-sidenav-control-container">
                     <div className="left-sidenav-control-zoomIn">
-                        <span className="glyphicon">&#xe015;</span>
+                        <Button className="glyphicon">&#xe015;</Button>
                     </div>
                     <div className="left-sidenav-control-zoomOut">
-                        <span className="glyphicon">&#xe016;</span>
+                        <Button className="glyphicon">&#xe016;</Button>
                     </div>
                     <div className="left-sidenav-control-save">
                         <Button className="button-small">
@@ -29,7 +34,7 @@ class ElementList extends Component {
                         </Button>
                     </div>
                 </div>
-                <div className="left-sidenav-container-icon">
+                <div className="left-sidenav-container-icon" onClick={this.createContainer}>
                     Container
                 </div>
                 <div className="left-sidenav-label-icon">

@@ -4,6 +4,7 @@ import { compose } from 'redux';
 import { NavLink, Redirect } from 'react-router-dom';
 import { firestoreConnect } from 'react-redux-firebase';
 import { getFirestore } from 'redux-firestore';
+import { Button } from 'react-materialize';
 
 class HomeScreen extends Component {
     state = {
@@ -21,18 +22,18 @@ class HomeScreen extends Component {
 
         return (
             <div>
-                <div className="left">
+                <div className="left-homescreen-container">
                     {/* CardList */}
                 </div>
-                <div className="right">
-                    <div className="right-container">
+                <div className="right-homescreen-container">
+                    <div className="right-homescreen-title">
                         <h1>
                             WireFrame
                         </h1>
                     </div>
-                    <a className="waves-effect waves-light btn">
+                    <Button className="create-wireframe">
                         Create New WireFrame
-                    </a>
+                    </Button>
                 </div>
             </div>
         )
