@@ -34,7 +34,8 @@ class LoginScreen extends Component {
       credentials,
     };
 
-    props.login(authData);
+    var userid = props.login(authData);
+    console.log(userid);
   }
 
   render() {
@@ -61,10 +62,13 @@ class LoginScreen extends Component {
               {authError ? <div className="red-text center"><p>{authError}</p></div> : null}
             </div>
           </form>
-
-          <div className="col s8 banner">
-            @todo<br />
-            List Maker
+          
+          <div className="right-homescreen-container">
+            <div className="right-homescreen-title">
+              <h1>
+                WireFrame
+              </h1>
+            </div>
           </div>
         </div>
       </div>

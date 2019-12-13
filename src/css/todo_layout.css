@@ -1,16 +1,25 @@
-html {
-  min-height: 100%;
-}
 
 /* HOME SCREEN */
 .left-homescreen-container, .right-homescreen-container{
   display: inline-block;
 }
-
-/* ELEMENT SCREEN > ELEMENT LIST */
+.left-homescreen-container {
+  float: left;
+}
+.right-homescreen-container {
+  float: right;
+}
+/* EDIT SCREEN */
+.left-container {
+  display: inline-block;
+}
+.right-container {
+  display: inline-block;
+}
+/* EDIT SCREEN > ELEMENT LIST */
 .left-sidenav {
   position: fixed;
-  top: 8%;
+  top: 9%;
   left: 0;
   overflow: hidden;
 }

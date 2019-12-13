@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { NavLink, Redirect } from 'react-router-dom';
@@ -6,12 +7,9 @@ import { firestoreConnect } from 'react-redux-firebase';
 import { getFirestore } from 'redux-firestore';
 import { Button } from 'react-materialize';
 import ElementCard from './ElementCard.js';
+import Draggable from 'react-draggable';
 
 class ElementList extends Component {
-    
-    createContainer = (e) => {
-        return React.createElement('draggable', {ElementCard})
-    }
 
     render() {
         return (
@@ -34,7 +32,7 @@ class ElementList extends Component {
                         </Button>
                     </div>
                 </div>
-                <div className="left-sidenav-container-icon" onClick={this.createContainer}>
+                <div className="left-sidenav-container-icon" onClick={() => this.props.createContainer()}>
                     Container
                 </div>
                 <div className="left-sidenav-label-icon">

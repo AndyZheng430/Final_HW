@@ -5,25 +5,26 @@ import { NavLink, Redirect } from 'react-router-dom';
 import { firestoreConnect } from 'react-redux-firebase';
 import { getFirestore } from 'redux-firestore';
 import { Button } from 'react-materialize';
+import CardList from './CardList.js';
 
 class HomeScreen extends Component {
     state = {
-
+        wireframeid: null,
     }
+
     handleNewList = () => {
         const firestore = getFirestore();
-
     }
 
     render() {
-        // if (!this.props.auth.uid) {
-        //     return <Redirect to="/login" />;
-        // }
+        if (!this.props.auth.uid) {
+            return <Redirect to="/login" />;
+        }
 
         return (
             <div>
                 <div className="left-homescreen-container">
-                    {/* CardList */}
+                    <CardList/>
                 </div>
                 <div className="right-homescreen-container">
                     <div className="right-homescreen-title">
