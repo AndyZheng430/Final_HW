@@ -7,7 +7,7 @@ class CardItem extends Component {
         return (
             <div className="card z-depth-0 cardItem">
                 <div className="card-content grey-text text-darken-3">
-                    <span className="card-title">{WireFrame.name}</span>
+                    <span className="card-title">{WireFrame.userId}</span>
                 </div>
             </div>
         );

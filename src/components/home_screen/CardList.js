@@ -7,44 +7,12 @@ import CardItem from './CardItem.js';
 
 class CardList extends Component {
 
-    extractWireFrame(id) {
-        var userId = this.props.auth.uid;
-        const fireStore = getFirestore();
-        fireStore.collection('users').doc(userId).get().then(function(documentSnapshot){
-            if (documentSnapshot.exists) {
-                console.log(documentSnapshot.data()['wireframeId']);
-                var id = documentSnapshot.data()['wireframeId'];
-                return fireStore.collection('WireFrameList').doc(id);
-            } else {
-                console.log('FAILED');
-            }
-        });
-    }
-
-    getWireFrameId() {
-        var userId = this.props.auth.uid;
-        const fireStore = getFirestore();
-        fireStore.collection('users').doc(userId).get().then(function(documentSnapshot){
-            if (documentSnapshot.exists) {
-                console.log(documentSnapshot.data()['wireframeId']);
-                return documentSnapshot.data()['wireframeId'];
-            } else {
-                console.log('FAILED');
-            }
-        });
-    }
-
     render() {
-        const wfi = this.getWireFrameId();
+        var currentUserId = this.props.auth.uid;
         const WireFrameList = this.props.WireFrameList;
-        console.log(WireFrameList);
-        // const WireFrame = this.extractWireFrame(wfi);
-        // console.log(WireFrame);
-        // const newWireFrameList = this.extractWireFrame(WireFrameList, wfi);
-        // console.log(newWireFrameList);
         return (
             <div className="WireFrameList section">
-                {WireFrameList && WireFrameList.map(WireFrame => (
+                {WireFrameList && WireFrameList.filter(WireFrame => WireFrame.userId == currentUserId).map(WireFrame => (
                     <Link to={'/editScreen/' + WireFrame.id} key={WireFrame.id}>
                         <CardItem WireFrame={WireFrame} />
                     </Link>
@@ -54,11 +22,11 @@ class CardList extends Component {
     }
 }
     
-    const mapStateToProps = (state) => {
-        return {
-            WireFrameList: state.firestore.ordered.WireFrameList,
-            auth: state.firebase.auth,
-        };
+const mapStateToProps = (state) => {
+    return {
+        WireFrameList: state.firestore.ordered.WireFrameList,
+        auth: state.firebase.auth,
     };
+};
     
-    export default compose(connect(mapStateToProps))(CardList);
+export default compose(connect(mapStateToProps))(CardList);

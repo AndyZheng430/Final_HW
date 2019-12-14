@@ -29,12 +29,11 @@ class DatabaseTester extends React.Component {
         const fireStore = getFirestore();
         var list = [];
         dataTest.Users.forEach(userInfo => {
-            list.push(userInfo.wireframeId);
             fireStore.collection('users').add({
                     firstName: userInfo.firstName,
                     initial: userInfo.initial,
                     lastName: userInfo.lastName,
-                    wireframeId: userInfo.wireframeId,
+                    userId: userInfo.userId,
                 }).then(() => {
                     console.log("USER DATABASE RESET");
                 }).catch((err) => {
@@ -42,10 +41,9 @@ class DatabaseTester extends React.Component {
                 });
         });
         dataTest.WireFrameList.forEach(wireframe => {
-            var lisElement = list.splice(0,1)[0];
-            console.log(lisElement);
-            fireStore.collection('WireFrameList').doc(lisElement).set({
+            fireStore.collection('WireFrameList').add({
                 wireframelists: wireframe.wireframes,
+                userId: wireframe.userId
             }).then(() => {
                 console.log("WIREFRAME DATABASE RESET");
             }).catch((err) => {
@@ -64,45 +62,27 @@ class DatabaseTester extends React.Component {
         var firebase = getFirebase();
         var user = firebase.auth().currentUser.uid;
         const fireStore = getFirestore();
-        fireStore.collection('users').doc(user).get().then(function(documentSnapshot){
-            if (documentSnapshot.exists) {
-                console.log(documentSnapshot.data()['wireframeId']);
-                var wireframeid = documentSnapshot.data()['wireframeId'];
+        var wireframes = fireStore.collection('WireFrameList').get().then(function(documentSnapshot){
+            if (documentSnapshot.exists && documentSnapshot.data()['userId'] == user) {
+                var data = documentSnapshot.data()['wireframe'];
+                console.log(data);
             } else {
-                console.log('FAILED');
+                console.log('document not found');
             }
-            var wireframes = fireStore.collection('WireFrameList').doc(wireframeid);
-            wireframes.get().then(function(documentSnapshot){
-                if (documentSnapshot.exists) {
-                    var data = documentSnapshot.data()['wireframe'];
-                    console.log(data);
-                } else {
-                    console.log('document not found');
-                }
-            })
         });
     }
 
-    handleGetWireFrameCollections = () => {
+    handleAddToWireFrame = () => {
         var firebase = getFirebase();
         var user = firebase.auth().currentUser.uid;
-        var fireStore = getFirestore();
-        fireStore.collection('users').doc(user).get().then(function(documentSnapshot){
-            if (documentSnapshot.exists) {
-                console.log(documentSnapshot.data()['wireframeId']);
-                var wireframeid = documentSnapshot.data()['wireframeId'];
-            } else {
-                console.log('FAILED');
+        const fireStore = getFirestore();
+        fireStore.collection('WireFrameList').get().then(function(documentSnapshot){
+            if (documentSnapshot.exists && documentSnapshot.data()['userId'] == user) {
+                var data = documentSnapshot.data()['wireframe'];
+                data.push({name: "bob"});
+                documentSnapshot.data()['wireframe'].set({wireframe: data});
+                console.log(data);
             }
-            var wireframes = fireStore.collection('WireFrameList').doc(wireframeid);
-            wireframes.get().then(function(documentSnapshot){
-                if (documentSnapshot.exists) {
-                    var data = documentSnapshot.data()['wireframe'];
-                    console.log(data);
-                } else {
-                    console.log('document not found');
-                }
-            })
         });
     }
 
@@ -113,6 +93,7 @@ class DatabaseTester extends React.Component {
                 <button onClick={this.handleReset}>Reset Database</button>
                 <button onClick={this.handleGetWireFrameId}>Check User WireFrame Id</button>
                 <button onClick={this.handleGetWireFrame}>Check User WireFrame</button>
+                <button onClick={this.handleAddToWireFrame}> Add to wireframe field</button>
             </div>
             )
     }

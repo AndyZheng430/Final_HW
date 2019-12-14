@@ -12,7 +12,6 @@
   border-radius: 5px;
 }
 
-
 /* HOME SCREEN */
 .left-homescreen-container {
   width: 30%;
@@ -42,6 +41,12 @@ Button.create-wireframe {
 .right-container {
   width: 60%;
   min-height: 800px;
+}
+
+/* EDIT SCREEN */
+.draggable {
+  border: 2px solid black;
+  width: 100px;
 }
 
 /* EDIT SCREEN > EDIT LIST */

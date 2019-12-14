@@ -12,7 +12,6 @@ class RegisterScreen extends Component {
     password: '',
     firstName: '',
     lastName: '',
-    wireframeId: null,
   }
 
   handleChange = (e) => {
@@ -26,13 +25,6 @@ class RegisterScreen extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-
-    // creates a new wireframe list in database and adds the id to user information
-    const firestore = getFirestore();
-    var current_doc = firestore.collection("WireFrameList").doc();
-    current_doc.set({ wireframe: [] });
-    this.state.wireframeId = current_doc.id;
-    console.log(this.state.wireframeId);
 
     const { props, state } = this;
     const { firebase } = props;

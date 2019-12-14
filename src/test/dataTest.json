@@ -4,23 +4,24 @@
             "firstName": "Bob",
             "initial": "BT",
             "lastName": "theBuilder",
-            "wireframeId": "CanWeFixIt"
+            "userId": "CanWeFixIt"
         },
         {
             "firstName": "Naruto",
             "initial": "NU",
             "lastName": "Uzumaki",
-            "wireframeId": "BorutosFather"
+            "userId": "BorutosFather"
         },
         {
             "firstName": "One",
             "initial": "OP",
             "lastName": "Piece",
-            "wireframeId": "CanNeverBeFound"
+            "userId": "CanNeverBeFound"
         }
     ],
     "WireFrameList": [
         {
+            "userId": "CanWeFixIt",
             "wireframes": [
                 {                    
                     "Time": 1574721599016,
@@ -80,7 +81,12 @@
                             "border-radius": 5
                         } 
                     }
-                },
+                }
+            ]
+        },
+        {
+            "userId": "CanWeFixIt",
+            "wireframes": [
                 {
                     "Time": 1574721588727,
                     "id": 1,
@@ -99,7 +105,12 @@
                         "border-thickness": 0,
                         "border-radius": 0
                     }}
-                },
+                }
+            ]
+        },
+        {
+            "userId": "CanWeFixIt",
+            "wireframes": [
                 {
                     "Time": 1574721581238,
                     "id": 2,
@@ -149,6 +160,7 @@
             ]
         },
         {
+            "userId": "BorutosFather",
             "wireframes": [
                 {
                     "Time": 1574721599016,
@@ -159,6 +171,7 @@
             ]
         },
         {
+            "userId": "CanNeverBeFound",
             "wireframes": []
         }
     ]

@@ -22,6 +22,7 @@
   top: 9%;
   left: 0;
   overflow: hidden;
+  z-index: 1;
 }
 .left-sidenav-control-container {
   text-align: center;
