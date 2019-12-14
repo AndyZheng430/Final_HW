@@ -18,7 +18,7 @@
 }
 /* EDIT SCREEN > ELEMENT LIST */
 .left-sidenav {
-  position: fixed;
+  position: absolute;
   top: 9%;
   left: 0;
   overflow: hidden;
@@ -33,4 +33,13 @@
 }
 Button.button-small {
   vertical-align: center;
+}
+
+/* EDIT SCREEN > ELEMENT PROPERTY */
+.right-sidenav {
+  position: absolute;
+  top: 9%;
+  right: 0;
+  overflow: hidden;
+  z-index: 1;
 }

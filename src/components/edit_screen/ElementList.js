@@ -38,10 +38,10 @@ class ElementList extends Component {
                 <div className="left-sidenav-label-icon" onClick={() => this.props.createLabel()}>
                     Label
                 </div>
-                <div className="left-sidenav-button-icon" onClick={() => this.props.createContainer()}>
+                <div className="left-sidenav-button-icon" onClick={() => this.props.createButton()}>
                     Button
                 </div>
-                <div className="left-sidenav-textfield-icon" onClick={() => this.props.createContainer()}>
+                <div className="left-sidenav-textfield-icon" onClick={() => this.props.createTextField()}>
                     Textfield
                 </div>
             </div>

@@ -21,156 +21,165 @@
     ],
     "WireFrameList": [
         {
-            "userId": "CanWeFixIt",
-            "wireframes": [
-                {                    
-                    "Time": 1574721599016,
-                    "id": 0,
-                    "Name": "First WireFrame",
-                    "List": {
-                        "Container": {
-                            "X": 0,
-                            "Y": 0,
-                            "sizeX": 800,
-                            "sizeY": 800,
-                            "text": "",
-                            "text-color": "",
-                            "font-size": 0,
-                            "background-color": "white",
-                            "border-color": "black",
-                            "border-thickness": 2,
-                            "border-radius": 0
-                        },
-                        "Label": {
-                            "X": 50,
-                            "Y": 50,
-                            "sizeX": 100,
-                            "sizeY": 30,
-                            "text": "Login",
-                            "text-color": "black",
-                            "font-size": 18,
-                            "background-color": "white",
-                            "border-color": "",
-                            "border-thickness": 0,
-                            "border-radius": 0
-                        },
-                        "Textfield": {
-                            "X": 50,
-                            "Y": 100,
-                            "sizeX": 100,
-                            "sizeY": 50,
-                            "text": "",
-                            "text-color": "",
-                            "font-size": 18,
-                            "background-color": "",
-                            "border-color": "black",
-                            "border-thickness": 2,
-                            "border-radius": 0
-                        },
-                        "Button": {
-                            "X": 50,
-                            "Y": 200,
-                            "sizeX": 100,
-                            "sizeY": 50,
-                            "text": "Submit",
-                            "text-color": "black",
-                            "font-size": 18,
-                            "background-color": "gray",
-                            "border-color": "black",
-                            "border-thickness": 2,
-                            "border-radius": 5
-                        } 
-                    }
-                }
-            ]
-        },
-        {
+            "Time": 1574721599016,
+            "Name": "First WireFrame",
             "userId": "CanWeFixIt",
             "wireframes": [
                 {
-                    "Time": 1574721588727,
+                    "key": 0,
+                    "id": 0,
+                    "title": "Container",
+                    "X": 0,
+                    "Y": 0,
+                    "sizeX": 800,
+                    "sizeY": 800,
+                    "text": "",                            
+                    "text-color": "",
+                    "font-size": 0,
+                    "background-color": "white",
+                    "border-color": "black",
+                    "border-thickness": 2,
+                    "border-radius": 0
+                },
+                {
+                    "key": 1,
                     "id": 1,
-                    "Name": "Second WireFrame",
-                    "List": {
-                        "Label": {
-                        "X": 100,
-                        "Y": 100,
-                        "sizeX": 500,
-                        "sizeY": 100,
-                        "text": "WELCOME",
-                        "text-color": "black",
-                        "font-size": 48,
-                        "background-color": "white",
-                        "border-color": "",
-                        "border-thickness": 0,
-                        "border-radius": 0
-                    }}
+                    "title": "Label",                       
+                    "X": 50,
+                    "Y": 50,
+                    "sizeX": 100,
+                    "sizeY": 30,
+                    "text": "Login",
+                    "text-color": "black",
+                    "font-size": 18,
+                    "background-color": "white",
+                    "border-color": "",
+                    "border-thickness": 0,
+                    "border-radius": 0
+                },
+                {
+                    "key": 2,
+                    "id": 2,
+                    "title": "Textfield",
+                    "X": 50,
+                    "Y": 100,
+                    "sizeX": 100,
+                    "sizeY": 50,
+                    "text": "",
+                    "text-color": "",
+                    "font-size": 18,
+                    "background-color": "",
+                    "border-color": "black",
+                    "border-thickness": 2,
+                    "border-radius": 0
+                }, 
+                {
+                    "key": 3,
+                    "id": 3,
+                    "title":"Button",
+                    "X": 50,
+                    "Y": 200,
+                    "sizeX": 100,
+                    "sizeY": 50,
+                    "text": "Submit",
+                    "text-color": "black",
+                    "font-size": 18,
+                    "background-color": "gray",
+                    "border-color": "black",
+                    "border-thickness": 2,
+                    "border-radius": 5
                 }
             ]
         },
         {
+            "Time": 1574721588727,
+            "Name": "Second WireFrame",
+            "userId": "CanWeFixIt",
+            "wireframes": [
+                { 
+                    "key": 0,
+                    "id": 0,
+                    "title": "Label",
+                    "X": 100,
+                    "Y": 100,
+                    "sizeX": 500,
+                    "sizeY": 100,
+                    "text": "WELCOME",
+                    "text-color": "black",
+                    "font-size": 48,
+                    "background-color": "white",
+                    "border-color": "",
+                    "border-thickness": 0,
+                    "border-radius": 0
+                    
+                }
+            ]
+        },
+        {
+            "Time": 1574721581238,
+            "Name": "Third WireFrame",
             "userId": "CanWeFixIt",
             "wireframes": [
                 {
-                    "Time": 1574721581238,
-                    "id": 2,
-                    "Name": "Third WireFrame",
-                    "List": {
-                        "Container": {
-                            "X": 0,
-                            "Y": 0,
-                            "sizeX": 800,
-                            "sizeY": 800,
-                            "text": "",
-                            "text-color": "",
-                            "font-size": 0,
-                            "background-color": "white",
-                            "border-color": "black",
-                            "border-thickness": 2,
-                            "border-radius": 0
-                        },
-                        "Label": {
-                            "X": 250,
-                            "Y": 250,
-                            "sizeX": 100,
-                            "sizeY": 30,
-                            "text": "Login",
-                            "text-color": "black",
-                            "font-size": 18,
-                            "background-color": "white",
-                            "border-color": "",
-                            "border-thickness": 0,
-                            "border-radius": 0
-                        },
-                        "Textfield": {
-                            "X": 250,
-                            "Y": 300,
-                            "sizeX": 100,
-                            "sizeY": 50,
-                            "text": "",
-                            "text-color": "",
-                            "font-size": 18,
-                            "background-color": "",
-                            "border-color": "black",
-                            "border-thickness": 2,
-                            "border-radius": 0
-                        }
-                    }
-                }
-            ]
-        },
-        {
-            "userId": "BorutosFather",
-            "wireframes": [
-                {
-                    "Time": 1574721599016,
+                    "key": 0,
                     "id": 0,
-                    "Name": "Something",
-                    "List": {}
+                    "title": "Container",
+                    "X": 0,
+                    "Y": 0,
+                    "sizeX": 800,
+                    "sizeY": 800,
+                    "text": "",
+                    "text-color": "",
+                    "font-size": 0,
+                    "background-color": "white",
+                    "border-color": "black",
+                    "border-thickness": 2,
+                    "border-radius": 0
+                 
+                },
+                {
+                    "key": 1,
+                    "id": 1,
+                    "title": "Label",
+                    "X": 250,
+                    "Y": 250,
+                    "sizeX": 100,
+                    "sizeY": 30,
+                    "text": "Login",
+                    "text-color": "black",
+                    "font-size": 18,
+                    "background-color": "white",
+                    "border-color": "",
+                    "border-thickness": 0,
+                    "border-radius": 0
+                },
+                {
+                    "key": 2,
+                    "id": 2,
+                    "title": "Textfield",
+                    "X": 250,
+                    "Y": 300,
+                    "sizeX": 100,
+                    "sizeY": 50,
+                    "text": "",
+                    "text-color": "",
+                    "font-size": 18,
+                    "background-color": "",
+                    "border-color": "black",
+                    "border-thickness": 2,
+                    "border-radius": 0
                 }
             ]
         },
         {
+            "Time": 1574721599016,
+            "Name": "Something",
+            "userId": "BorutosFather",
+            "wireframes": []
+        },
+        {
+            "Time": 1574721599016,
+            "Name": "First WireFrame",
             "userId": "CanNeverBeFound",
             "wireframes": []
         }

@@ -40,7 +40,8 @@ Button.create-wireframe {
 }
 .right-container {
   width: 60%;
-  min-height: 800px;
+  min-height: 500px;
+  height: 100%;
 }
 
 /* EDIT SCREEN */
@@ -83,4 +84,12 @@ Button.button-small {
   border: 1.5px solid black;
   border-radius: 8px;
   margin: 5px 5px;
+}
+
+/* EDIT SCREEN > ELEMENT PROPERTY */
+.right-sidenav {
+  background-color: gray;
+  min-height: 100%;
+  width: 20%;
+  text-align: center;
 }

@@ -9,11 +9,37 @@ import { Draggable } from 'react-draggable';
 class ElementCard extends Component {
 
     render() {
-        return(
-            <div>
-                container
-            </div>
-        )
+        const { controls } = this.props;
+        {
+            if (controls.title == 'container') {
+                return(
+                    <div className="draggable-container">
+                        container
+                    </div>
+                )
+            }
+            else if (controls.title == 'label') {
+                return(
+                    <div className="draggable-label">
+                        label
+                    </div>
+                )
+            }
+            else if (controls.title == 'button') {
+                return(
+                    <div className="draggable-button">
+                        button
+                    </div>
+                )
+            }
+            else if (controls.title == 'textfield') {
+                return(
+                    <div className="draggable-textfield">
+                        textfield
+                    </div>
+                )
+            }
+        }
     }
 }
 

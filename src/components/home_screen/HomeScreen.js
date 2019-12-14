@@ -8,19 +8,26 @@ import { Button } from 'react-materialize';
 import CardList from './CardList.js';
 
 class HomeScreen extends Component {
-    state = {
-        wireframeid: null,
-    }
 
     handleNewList = () => {
         const firestore = getFirestore();
+        firestore.collection('WireFrameList').add({
+            userId: this.props.auth.uid,
+            wireframlists: [],
+            Name: "Unknown",
+            Time: Date.now()
+        }).then(docRef => {
+            window.location.href ="/editScreen/" + docRef.id;
+            window.location.replace("/editScreen/" + docRef.id);
+        })
+
     }
 
     render() {
         if (!this.props.auth.uid) {
             return <Redirect to="/login" />;
         }
-
+        
         return (
             <div>
                 <div className="left-homescreen-container">
@@ -32,7 +39,7 @@ class HomeScreen extends Component {
                             WireFrame
                         </h1>
                     </div>
-                    <Button className="create-wireframe">
+                    <Button className="create-wireframe" onClick={this.handleNewList}>
                         Create New WireFrame
                     </Button>
                 </div>
@@ -44,7 +51,8 @@ class HomeScreen extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        auth: state.firebase.auth
+        WireFrameList: state.firestore.ordered.WireFrameList,
+        auth: state.firebase.auth,
     };
 };
 

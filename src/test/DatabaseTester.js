@@ -24,10 +24,35 @@ class DatabaseTester extends React.Component {
             })
         });
     }
+    
+    handleClearWireFrame = () => {
+        const fireStore = getFirestore();
+        fireStore.collection('WireFrameList').get().then(function(querySnapshot){
+            querySnapshot.forEach(function(doc) {
+                console.log("deleting wireframe " + doc.id);
+                fireStore.collection('WireFrameList').doc(doc.id).delete();
+            })
+        });
+    }
+
+    handleResetWireFrame = () => {
+        const fireStore = getFirestore();
+        dataTest.WireFrameList.forEach(wireframe => {
+            fireStore.collection('WireFrameList').add({
+                wireframelists: wireframe.wireframes,
+                userId: wireframe.userId,
+                Name: wireframe.Name,
+                Time: wireframe.Time,
+            }).then(() => {
+                console.log("WIREFRAME DATABASE RESET");
+            }).catch((err) => {
+                console.log(err);
+            });
+        });
+    }
 
     handleReset = () => {
         const fireStore = getFirestore();
-        var list = [];
         dataTest.Users.forEach(userInfo => {
             fireStore.collection('users').add({
                     firstName: userInfo.firstName,
@@ -43,7 +68,9 @@ class DatabaseTester extends React.Component {
         dataTest.WireFrameList.forEach(wireframe => {
             fireStore.collection('WireFrameList').add({
                 wireframelists: wireframe.wireframes,
-                userId: wireframe.userId
+                userId: wireframe.userId,
+                Name: wireframe.Name,
+                Time: wireframe.Time
             }).then(() => {
                 console.log("WIREFRAME DATABASE RESET");
             }).catch((err) => {
@@ -91,6 +118,8 @@ class DatabaseTester extends React.Component {
             <div>
                 <button onClick={this.handleClear}>Clear  Database</button>
                 <button onClick={this.handleReset}>Reset Database</button>
+                <button onClick={this.handleClearWireFrame}>Clear WireFrame Database </button>
+                <button onClick={this.handleResetWireFrame}>Reset WireFrame Database </button>
                 <button onClick={this.handleGetWireFrameId}>Check User WireFrame Id</button>
                 <button onClick={this.handleGetWireFrame}>Check User WireFrame</button>
                 <button onClick={this.handleAddToWireFrame}> Add to wireframe field</button>
