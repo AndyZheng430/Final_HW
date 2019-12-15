@@ -10,8 +10,12 @@ import ElementCard from './ElementCard.js';
 import Draggable from 'react-draggable';
 
 class ElementProperty extends Component {
+    state = {
+        selectItem: this.props.property
+    }
 
     render() {
+        
         return (
             <div className="right-sidenav">
                 <div className="right-sidenav-control-container">
@@ -27,7 +31,7 @@ class ElementProperty extends Component {
                     </div>
                     <div>
                         <p><strong>Label: </strong></p>
-                        <input type="text"></input>
+                        <input type="text" defaultValue={this.state.selectItem.title}></input>
                     </div>
                     <div>
                         <p><strong>Background: </strong></p>

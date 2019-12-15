@@ -8,6 +8,8 @@
     "materialize-css": "^1.0.0-rc.2",
     "moment": "^2.24.0",
     "react": "^16.11.0",
+    "react-color": "^2.17.3",
+    "react-color-picker": "^4.0.2",
     "react-dom": "^16.11.0",
     "react-draggable": "^4.2.0",
     "react-materialize": "^3.4.1",
@@ -15,7 +17,7 @@
     "react-redux": "^7.1.1",
     "react-redux-firebase": "^3.0.3",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "^3.3.0",
     "redux": "^4.0.4",
     "redux-firestore": "^0.9.0",
     "redux-thunk": "^2.3.0"

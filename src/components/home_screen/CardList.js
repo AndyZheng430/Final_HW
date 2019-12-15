@@ -4,8 +4,15 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { getFirestore } from 'redux-firestore';
 import CardItem from './CardItem.js';
+import { Button } from 'react-materialize';
 
 class CardList extends Component {
+
+    deleteWireFrame = (e, id) => {
+        e.stopPropagation();
+        const firestore = getFirestore();
+        firestore.collection('todoLists').doc(id).delete();
+    }
 
     render() {
         var currentUserId = this.props.auth.uid;

@@ -14,6 +14,10 @@ class ElementList extends Component {
     render() {
         return (
             <div className="left-sidenav">
+                <div >
+                    <h6>Title:</h6>
+                    <input type="text"/>
+                </div>
                 <div className="left-sidenav-control-container">
                     <div className="left-sidenav-control-zoomIn">
                         <Button className="glyphicon">&#xe015;</Button>

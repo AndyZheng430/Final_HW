@@ -10,6 +10,7 @@ class ElementCard extends Component {
 
     render() {
         const { controls } = this.props;
+        console.log(controls);
         {
             if (controls.title == 'container') {
                 return(

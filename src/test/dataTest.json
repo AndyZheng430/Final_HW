@@ -34,12 +34,12 @@
                     "sizeX": 800,
                     "sizeY": 800,
                     "text": "",                            
-                    "text-color": "",
-                    "font-size": 0,
-                    "background-color": "white",
-                    "border-color": "black",
-                    "border-thickness": 2,
-                    "border-radius": 0
+                    "textColor": "",
+                    "fontSize": 0,
+                    "backgroundColor": "white",
+                    "borderColor": "black",
+                    "borderThickness": 2,
+                    "borderRadius": 0
                 },
                 {
                     "key": 1,
@@ -50,12 +50,12 @@
                     "sizeX": 100,
                     "sizeY": 30,
                     "text": "Login",
-                    "text-color": "black",
-                    "font-size": 18,
-                    "background-color": "white",
-                    "border-color": "",
-                    "border-thickness": 0,
-                    "border-radius": 0
+                    "textColor": "black",
+                    "fontSize": 18,
+                    "backgroundColor": "white",
+                    "borderColor": "",
+                    "borderThickness": 0,
+                    "borderRadius": 0
                 },
                 {
                     "key": 2,
@@ -66,12 +66,12 @@
                     "sizeX": 100,
                     "sizeY": 50,
                     "text": "",
-                    "text-color": "",
-                    "font-size": 18,
-                    "background-color": "",
-                    "border-color": "black",
-                    "border-thickness": 2,
-                    "border-radius": 0
+                    "textColor": "",
+                    "fontSize": 18,
+                    "backgroundColor": "",
+                    "borderColor": "black",
+                    "borderThickness": 2,
+                    "borderRadius": 0
                 }, 
                 {
                     "key": 3,
@@ -82,12 +82,12 @@
                     "sizeX": 100,
                     "sizeY": 50,
                     "text": "Submit",
-                    "text-color": "black",
-                    "font-size": 18,
-                    "background-color": "gray",
-                    "border-color": "black",
-                    "border-thickness": 2,
-                    "border-radius": 5
+                    "textColor": "black",
+                    "fontSize": 18,
+                    "backgroundColor": "gray",
+                    "borderColor": "black",
+                    "borderThickness": 2,
+                    "borderRadius": 5
                 }
             ]
         },
@@ -105,12 +105,12 @@
                     "sizeX": 500,
                     "sizeY": 100,
                     "text": "WELCOME",
-                    "text-color": "black",
-                    "font-size": 48,
-                    "background-color": "white",
-                    "border-color": "",
-                    "border-thickness": 0,
-                    "border-radius": 0
+                    "textColor": "black",
+                    "fontSize": 48,
+                    "backgroundColor": "white",
+                    "borderColor": "",
+                    "borderThickness": 0,
+                    "borderRadius": 0
                     
                 }
             ]
@@ -129,12 +129,12 @@
                     "sizeX": 800,
                     "sizeY": 800,
                     "text": "",
-                    "text-color": "",
-                    "font-size": 0,
-                    "background-color": "white",
-                    "border-color": "black",
-                    "border-thickness": 2,
-                    "border-radius": 0
+                    "textColor": "",
+                    "fontSize": 0,
+                    "backgroundColor": "white",
+                    "borderColor": "black",
+                    "borderThickness": 2,
+                    "borderRadius": 0
                  
                 },
                 {
@@ -146,12 +146,12 @@
                     "sizeX": 100,
                     "sizeY": 30,
                     "text": "Login",
-                    "text-color": "black",
-                    "font-size": 18,
-                    "background-color": "white",
-                    "border-color": "",
-                    "border-thickness": 0,
-                    "border-radius": 0
+                    "textColor": "black",
+                    "fontSize": 18,
+                    "backgroundColor": "white",
+                    "borderColor": "",
+                    "borderThickness": 0,
+                    "borderRadius": 0
                 },
                 {
                     "key": 2,
@@ -162,12 +162,12 @@
                     "sizeX": 100,
                     "sizeY": 50,
                     "text": "",
-                    "text-color": "",
-                    "font-size": 18,
-                    "background-color": "",
-                    "border-color": "black",
-                    "border-thickness": 2,
-                    "border-radius": 0
+                    "textColor": "",
+                    "fontSize": 18,
+                    "backgroundColor": "",
+                    "borderColor": "black",
+                    "borderThickness": 2,
+                    "borderRadius": 0
                 }
             ]
         },

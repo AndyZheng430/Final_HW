@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import Button from 'react-materialize/lib/Button';
+import { getFirestore } from 'redux-firestore';
 
 class CardItem extends Component {
-    
+
     render() {
         const { WireFrame } = this.props;
         return (
