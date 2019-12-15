@@ -34,8 +34,12 @@ Button.create-wireframe {
 }
 
 /* HOME SCREEN > CARDLIST */
-.WireFrameList {
+.WireFrameContainer {
+  width: 300px;
+}
+.WireFrameCard {
   padding-left: 5px;
+  width: 200px;
 }
 
 /* HOME SCREEN > CARDLIST > CARDITEM */
@@ -43,6 +47,10 @@ Button.create-wireframe {
   border: 2px solid silver;
   background-color: silver;
   border-radius: 2;
+}
+.delete-content {
+  padding: 24px;
+  float: right;
 }
 
 /* EDIT SCREEN */

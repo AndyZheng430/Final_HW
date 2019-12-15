@@ -9,6 +9,12 @@
 .right-homescreen-container {
   float: right;
 }
+.WireFrameCard {
+  display: inline-block;
+}
+.delete-content {
+  display: inline-block;
+}
 /* EDIT SCREEN */
 .left-container {
   display: inline-block;

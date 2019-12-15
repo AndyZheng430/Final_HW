@@ -11,7 +11,7 @@ class CardList extends Component {
     deleteWireFrame = (e, id) => {
         e.stopPropagation();
         const firestore = getFirestore();
-        firestore.collection('todoLists').doc(id).delete();
+        firestore.collection('WireFrameList').doc(id).delete();
     }
 
     render() {
@@ -20,9 +20,14 @@ class CardList extends Component {
         return (
             <div className="WireFrameList section">
                 {WireFrameList && WireFrameList.filter(WireFrame => WireFrame.userId == currentUserId).map(WireFrame => (
-                    <Link to={'/editScreen/' + WireFrame.id} key={WireFrame.id}>
-                        <CardItem WireFrame={WireFrame} />
-                    </Link>
+                    <div className="WireFrameContainer">
+                        <Link to={'/editScreen/' + WireFrame.id} key={WireFrame.id} className="WireFrameCard">
+                            <CardItem WireFrame={WireFrame} />
+                        </Link>
+                        <div className="delete-content">
+                            <Button onClick={(e) => this.deleteWireFrame(e, WireFrame.id)} className="deleteCard">X</Button>
+                        </div>
+                    </div>
                 ))} 
             </div>
         );
