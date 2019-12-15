@@ -10,34 +10,75 @@ class ElementCard extends Component {
 
     render() {
         const { controls } = this.props;
-        console.log(controls);
         {
             if (controls.title == 'container') {
                 return(
-                    <div className="draggable-container">
-                        container
+                    <div className="draggable-container"
+                    style={{
+                        backgroundColor: controls.backgroundColor, 
+                        width: controls.sizeX,
+                        height: controls.sizeY,
+                        borderWidth: controls.borderThickness,
+                        borderStyle: "solid",
+                        borderColor: "black",
+                        borderRadius: controls.borderRadius,
+                    }}
+                    >
                     </div>
                 )
             }
             else if (controls.title == 'label') {
                 return(
-                    <div className="draggable-label">
-                        label
-                    </div>
+                    <label className="draggable-label"
+                    style={{
+                        backgroundColor: controls.backgroundColor, 
+                        fontSize: controls.fontSize, 
+                        color: controls.textColor,
+                        width: controls.sizeX,
+                        height: controls.sizeY,
+                        borderWidth: controls.borderThickness,
+                        borderStyle: "solid",
+                        borderColor: "black",
+                        borderRadius: controls.borderRadius,
+                    }}>
+                        {controls.text}
+                    </label>
                 )
             }
             else if (controls.title == 'button') {
                 return(
-                    <div className="draggable-button">
-                        button
-                    </div>
+                    <button className="draggable-button"
+                    style={{
+                        backgroundColor: controls.backgroundColor, 
+                        fontSize: controls.fontSize, 
+                        color: controls.textColor,
+                        width: controls.sizeX,
+                        height: controls.sizeY,
+                        borderWidth: controls.borderThickness,
+                        borderStyle: "solid",
+                        borderColor: "black",
+                        borderRadius: controls.borderRadius,
+                    }}
+                    >
+                        {controls.text}
+                    </button>
                 )
             }
             else if (controls.title == 'textfield') {
                 return(
-                    <div className="draggable-textfield">
-                        textfield
-                    </div>
+                    <input type="text" className="draggable-textfield"
+                    style={{
+                        backgroundColor: controls.backgroundColor, 
+                        fontSize: controls.fontSize, 
+                        color: controls.textColor,
+                        width: controls.sizeX,
+                        height: controls.sizeY,
+                        borderWidth: controls.borderThickness,
+                        borderStyle: "solid",
+                        borderColor: "black",
+                        borderRadius: controls.borderRadius,
+                    }}
+                    />
                 )
             }
         }

@@ -26,12 +26,12 @@ class ElementList extends Component {
                         <Button className="glyphicon">&#xe016;</Button>
                     </div>
                     <div className="left-sidenav-control-save">
-                        <Button className="button-small">
+                        <Button className="button-small" onClick={this.props.saveAll}>
                             save
                         </Button>
                     </div>
                     <div className="left-sidenav-control-close">
-                        <Button className="button-small">
+                        <Button className="button-small" onClick={this.props.cancelAll}>
                             close
                         </Button>
                     </div>
