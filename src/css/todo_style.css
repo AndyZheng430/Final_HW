@@ -53,16 +53,14 @@ Button.create-wireframe {
 .right-container {
   width: 60%;
   height: 200%;
+  min-width: 500px;
+  min-height: 500px;
 }
 .right-sidenav {
   background-color: gray;
   height: 200%;
   width: 20%;
   text-align: center;
-}
-.draggable {
-  min-width: 20px;
-  min-height: 20px;
 }
 .backgroundcolor-picker, .border-picker {
   margin-left: 25px;

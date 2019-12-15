@@ -16,14 +16,14 @@ class ElementList extends Component {
             <div className="left-sidenav">
                 <div >
                     <h6>Title:</h6>
-                    <input type="text"/>
+                    <input id="title-textfield" type="text" defaultValue={this.props.Name}/>
                 </div>
                 <div className="left-sidenav-control-container">
                     <div className="left-sidenav-control-zoomIn">
-                        <Button className="glyphicon">&#xe015;</Button>
+                        <Button className="glyphicon" onClick={this.props.zoomIn}>&#xe015;</Button>
                     </div>
                     <div className="left-sidenav-control-zoomOut">
-                        <Button className="glyphicon">&#xe016;</Button>
+                        <Button className="glyphicon" onClick={this.props.zoomOut}>&#xe016;</Button>
                     </div>
                     <div className="left-sidenav-control-save">
                         <Button className="button-small" onClick={this.props.saveAll}>

@@ -15,12 +15,14 @@ class ElementCard extends Component {
                 return(
                     <div className="draggable-container"
                     style={{
+                        top: controls.Y,
+                        left: controls.X,
                         backgroundColor: controls.backgroundColor, 
                         width: controls.sizeX,
                         height: controls.sizeY,
                         borderWidth: controls.borderThickness,
                         borderStyle: "solid",
-                        borderColor: "black",
+                        borderColor: controls.borderColor,
                         borderRadius: controls.borderRadius,
                     }}
                     >
@@ -31,6 +33,8 @@ class ElementCard extends Component {
                 return(
                     <label className="draggable-label"
                     style={{
+                        top: controls.Y,
+                        left: controls.X,
                         backgroundColor: controls.backgroundColor, 
                         fontSize: controls.fontSize, 
                         color: controls.textColor,
@@ -38,7 +42,7 @@ class ElementCard extends Component {
                         height: controls.sizeY,
                         borderWidth: controls.borderThickness,
                         borderStyle: "solid",
-                        borderColor: "black",
+                        borderColor: controls.borderColor,
                         borderRadius: controls.borderRadius,
                     }}>
                         {controls.text}
@@ -49,6 +53,8 @@ class ElementCard extends Component {
                 return(
                     <button className="draggable-button"
                     style={{
+                        top: controls.Y,
+                        left: controls.X,
                         backgroundColor: controls.backgroundColor, 
                         fontSize: controls.fontSize, 
                         color: controls.textColor,
@@ -56,7 +62,7 @@ class ElementCard extends Component {
                         height: controls.sizeY,
                         borderWidth: controls.borderThickness,
                         borderStyle: "solid",
-                        borderColor: "black",
+                        borderColor: controls.borderColor,
                         borderRadius: controls.borderRadius,
                     }}
                     >
@@ -68,6 +74,8 @@ class ElementCard extends Component {
                 return(
                     <input type="text" className="draggable-textfield"
                     style={{
+                        top: controls.Y,
+                        left: controls.X,
                         backgroundColor: controls.backgroundColor, 
                         fontSize: controls.fontSize, 
                         color: controls.textColor,
@@ -75,9 +83,10 @@ class ElementCard extends Component {
                         height: controls.sizeY,
                         borderWidth: controls.borderThickness,
                         borderStyle: "solid",
-                        borderColor: "black",
+                        borderColor: controls.borderColor,
                         borderRadius: controls.borderRadius,
                     }}
+                    placeholder="Text Field"
                     />
                 )
             }
