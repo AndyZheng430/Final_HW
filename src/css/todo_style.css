@@ -35,11 +35,11 @@ Button.create-wireframe {
 
 /* HOME SCREEN > CARDLIST */
 .WireFrameContainer {
-  width: 300px;
+  width: 500px;
 }
 .WireFrameCard {
   padding-left: 5px;
-  width: 200px;
+  width: 400px;
 }
 
 /* HOME SCREEN > CARDLIST > CARDITEM */
